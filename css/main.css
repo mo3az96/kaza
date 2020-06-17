@@ -2230,9 +2230,13 @@ nav .menu-close-btn {
   display: none;
   position: absolute;
   top: 25px;
-  right: 25px;
+  right: 20px;
   font-size: 23px;
   color: #828282;
+}
+html[dir=rtl] nav .menu-close-btn {
+  right: auto;
+  left: 20px;
 }
 nav .xs-li {
   display: none;
