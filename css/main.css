@@ -236,6 +236,9 @@ html[dir=rtl] .newsletter-button:after {
 .mo-navbar > li.nav-li {
   margin: 0 7px;
 }
+html[dir=rtl] .mo-navbar > li.nav-li {
+  margin: 0 5px;
+}
 @media (max-width: 1199px) {
   .mo-navbar > li.nav-li {
     margin: 0;
@@ -244,6 +247,9 @@ html[dir=rtl] .newsletter-button:after {
 @media (min-width: 1500px) {
   .mo-navbar > li.nav-li {
     margin: 0 17px;
+  }
+  html[dir=rtl] .mo-navbar > li.nav-li {
+    margin: 0 15px;
   }
 }
 
@@ -285,6 +291,9 @@ nav {
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+html[dir=rtl] .call {
+  font-size: 16px;
 }
 @media (max-width: 1199px) {
   .call {
@@ -424,8 +433,15 @@ html[dir=rtl] .call .number {
   display: block;
   position: relative;
 }
+html[dir=rtl] .main-slide {
+  height: 100%;
+}
 .main-slide img {
   width: 100%;
+}
+html[dir=rtl] .main-slide img {
+  height: 100%;
+  object-fit: cover;
 }
 .main-slide .slide-info {
   position: absolute;
@@ -442,6 +458,9 @@ html[dir=rtl] .call .number {
   font-family: en;
   color: #fff;
   text-transform: uppercase;
+}
+html[dir=rtl] .main-slide .slide-info {
+  font-family: ar;
 }
 @media (max-width: 992px) {
   .main-slide .slide-info {
@@ -474,6 +493,14 @@ html[dir=rtl] .call .number {
   font-weight: normal;
   margin-bottom: 25px;
 }
+html[dir=rtl] .main-slide .slide-smallhead {
+  font-size: 40px;
+}
+@media (max-width: 992px) {
+  html[dir=rtl] .main-slide .slide-smallhead {
+    font-size: 30px;
+  }
+}
 @media (max-width: 992px) {
   .main-slide .slide-smallhead {
     font-size: 20px;
@@ -485,6 +512,14 @@ html[dir=rtl] .call .number {
   font-weight: 800;
   line-height: 1;
   margin-bottom: 40px;
+}
+html[dir=rtl] .main-slide .slide-head {
+  font-size: 80px;
+}
+@media (max-width: 992px) {
+  html[dir=rtl] .main-slide .slide-head {
+    font-size: 35px;
+  }
 }
 @media (max-width: 992px) {
   .main-slide .slide-head {
@@ -516,6 +551,9 @@ html[dir=rtl] .call .number {
     height: 30px;
     font-size: 14px;
     display: none;
+  }
+  html[dir=rtl] .main-slide .shop-now {
+    font-size: 16px;
   }
 }
 
@@ -1084,6 +1122,9 @@ html[dir=rtl] .cats-menu {
   font-family: en;
   font-weight: normal;
 }
+html[dir=rtl] .banner {
+  font-family: ar;
+}
 .banner img {
   width: 100%;
   height: 100%;
@@ -1161,6 +1202,9 @@ html[dir=rtl] .cats-menu {
   overflow: hidden;
   font-family: en;
   font-weight: normal;
+}
+html[dir=rtl] .offer-banner {
+  font-family: ar;
 }
 @media (max-width: 992px) {
   .offer-banner {
@@ -1663,7 +1707,7 @@ header {
 
 header {
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 @media (max-width: 992px) {
   header {
@@ -1800,7 +1844,7 @@ html[dir=rtl] .drop-cont .top-anchor:after {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
   visibility: hidden;
   opacity: 0;
-  z-index: 3;
+  z-index: 4;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1879,6 +1923,9 @@ html[dir=rtl] .drop-cont .drop-anchor img {
 .user-drop-cont {
   margin: 0;
 }
+html[dir=rtl] .user-drop-cont {
+  margin: 0;
+}
 .user-drop-cont .top-dropdown {
   top: 125%;
 }
@@ -1915,6 +1962,9 @@ html[dir=rtl] .user-anchor {
   }
 }
 .user-anchor.mo-log-icon {
+  margin: 0;
+}
+html[dir=rtl] .user-anchor.mo-log-icon {
   margin: 0;
 }
 .user-anchor .count {
@@ -2151,6 +2201,9 @@ nav .menu-close-btn {
   right: 25px;
   font-size: 23px;
   color: #828282;
+}
+nav .xs-li {
+  display: none;
 }
 @media (max-width: 992px) {
   nav {
