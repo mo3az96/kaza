@@ -2296,7 +2296,10 @@ nav .xs-li {
     line-height: unset;
   }
   nav .mo-navbar > li.cats-menu {
-    margin: 7px 0;
+    margin: 5px 0;
+  }
+  html[dir=rtl] nav .mo-navbar > li.cats-menu {
+    margin: 5px 0;
   }
   nav .mo-navbar > li.xs-li {
     display: block;
@@ -2305,6 +2308,9 @@ nav .xs-li {
     width: 100%;
     margin: 7px 0;
     line-height: unset;
+  }
+  html[dir=rtl] nav .mo-navbar > li.nav-li {
+    margin: 7px 0;
   }
   nav .nav-anchor {
     color: #000000;
