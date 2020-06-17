@@ -5,6 +5,7 @@ $(window).on('load', function () {
     });
 });
 $(document).ready(function () {
+    new WOW().init();
     if ($(window).width() > 767) {
         $('select.selectpicker').selectpicker({
             dropupAuto: false
