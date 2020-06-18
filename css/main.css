@@ -618,7 +618,7 @@ nav .mo-accordion:after {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(51, 51, 51, 0.9);
     z-index: 999;
     display: none;
   }
@@ -682,6 +682,7 @@ html[dir=rtl] .search-input {
   .search-input {
     width: 100%;
     margin-top: 15px;
+    height: 48px;
   }
 }
 
@@ -786,7 +787,7 @@ html[dir=rtl] .search-button {
 
 .mobile-select-cont {
   width: 100%;
-  height: 40px;
+  height: 48px;
   position: relative;
   background-color: #fff;
 }
@@ -930,6 +931,10 @@ html[dir=rtl] .cats-menu {
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  line-height: 1.2;
+}
+html[dir=rtl] .sub-a .cat-name {
+  font-size: 17px;
 }
 .sub-a:hover .cat-img img {
   filter: invert(61%) sepia(62%) saturate(422%) hue-rotate(116deg) brightness(85%) contrast(93%);
@@ -999,11 +1004,15 @@ html[dir=rtl] .cats-menu {
   font-size: 20px;
   color: #000000;
   font-weight: bold;
+  height: 56px;
   text-transform: capitalize;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+html[dir=rtl] .cat .cat-name {
+  font-size: 17px;
 }
 .cat:hover .cat-img img {
   filter: invert(61%) sepia(62%) saturate(422%) hue-rotate(116deg) brightness(85%) contrast(93%);
@@ -1425,7 +1434,7 @@ html[dir=rtl] .single-banner .banner-info {
   top: 10px;
   right: 10px;
   background-color: #efce5f;
-  width: 55px;
+  padding: 0 12px;
   height: 22px;
   display: flex;
   align-items: center;
@@ -1440,7 +1449,7 @@ html[dir=rtl] .single-banner .banner-info {
   top: 10px;
   left: 10px;
   background-color: #30b193;
-  width: 55px;
+  padding: 0 10px;
   height: 22px;
   display: flex;
   align-items: center;
@@ -1470,10 +1479,21 @@ html[dir=rtl] .single-banner .banner-info {
 .product .pro-name a:hover, .product .pro-name a:focus {
   color: #30b193;
 }
+@media (max-width: 992px) {
+  .product .pro-name {
+    text-align: center;
+  }
+}
 .product .mo-prices {
   display: flex;
   align-items: center;
   padding: 0 2px;
+}
+@media (max-width: 992px) {
+  .product .mo-prices {
+    justify-content: center;
+    text-align: center;
+  }
 }
 .product .mo-price {
   font-size: 20px;
@@ -1572,6 +1592,14 @@ html[dir=rtl] .sliders-head .mo-nav li {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+html[dir=rtl] .sliders-head .mo-nav li .tab-link {
+  font-size: 26px;
+}
+@media (max-width: 992px) {
+  html[dir=rtl] .sliders-head .mo-nav li .tab-link {
+    font-size: 21px;
+  }
+}
 @media (max-width: 992px) {
   .sliders-head .mo-nav li .tab-link {
     font-size: 21px;
@@ -1603,17 +1631,17 @@ html[dir=rtl] .sliders-head .mo-nav li {
   top: 0;
   left: 0;
   z-index: 999999;
-  background-color: #4d4d4d;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .pre-loader img {
-  width: 220px;
+  width: 200px;
 }
 @media (max-width: 767px) {
   .pre-loader img {
-    width: 150px;
+    width: 120px;
   }
 }
 .pre-loader .content {
@@ -1650,7 +1678,7 @@ html[dir=rtl] .sliders-head .mo-nav li {
   display: block;
 }
 .pre-loader .bar {
-  background-color: #fff;
+  background-color: #ccc;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -1756,7 +1784,8 @@ header {
 }
 @media (max-width: 992px) {
   .header {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px 0;
   }
 }
 
@@ -1771,7 +1800,19 @@ header {
 }
 @media (max-width: 992px) {
   .logo {
-    width: 175px;
+    display: none;
+    width: 150px;
+  }
+}
+
+.mobile-logo {
+  display: none;
+}
+@media (max-width: 992px) {
+  .mobile-logo {
+    display: block;
+    width: 100px;
+    margin: auto;
   }
 }
 
@@ -2039,6 +2080,12 @@ html[dir=rtl] .user-anchor.mo-log-icon {
     display: none;
   }
 }
+.user-anchor.mo-menu-icon {
+  margin: 0;
+}
+html[dir=rtl] .user-anchor.mo-menu-icon {
+  margin: 0;
+}
 
 .sec-head {
   font-size: 30px;
@@ -2054,6 +2101,14 @@ html[dir=rtl] .user-anchor.mo-log-icon {
     font-size: 25px;
   }
 }
+html[dir=rtl] .sec-head {
+  font-size: 26px;
+}
+@media (max-width: 992px) {
+  html[dir=rtl] .sec-head {
+    font-size: 25px;
+  }
+}
 
 .feats-cont {
   background-color: #fafafa;
@@ -2062,7 +2117,7 @@ html[dir=rtl] .user-anchor.mo-log-icon {
 @media (max-width: 992px) {
   .feats-cont {
     margin-top: 50px;
-    padding: 10px 0;
+    padding: 20px 0;
   }
 }
 
@@ -2072,7 +2127,7 @@ html[dir=rtl] .user-anchor.mo-log-icon {
 }
 @media (max-width: 992px) {
   .feat {
-    padding: 10px 0;
+    padding: 20px 0;
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -2092,6 +2147,7 @@ html[dir=rtl] .user-anchor.mo-log-icon {
   color: #000000;
   font-weight: 500;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 .feat .feat-desc {
   font-size: 16px;
@@ -2238,7 +2294,8 @@ html[dir=rtl] nav .menu-close-btn {
   right: auto;
   left: 20px;
 }
-nav .xs-li {
+nav .xs-li,
+nav .home-li {
   display: none;
 }
 @media (max-width: 992px) {
@@ -2301,7 +2358,7 @@ nav .xs-li {
   html[dir=rtl] nav .mo-navbar > li.cats-menu {
     margin: 5px 0;
   }
-  nav .mo-navbar > li.xs-li {
+  nav .mo-navbar > li.xs-li, nav .mo-navbar > li.home-li {
     display: block;
   }
   nav .mo-navbar > li.nav-li {
