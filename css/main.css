@@ -1576,6 +1576,7 @@ html[dir=rtl] .sliders-head .mo-nav li {
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
   line-height: 1;
+  padding-top: 7px;
 }
 .sliders-head .mo-nav li .tab-link:hover {
   background-color: transparent;
@@ -1605,6 +1606,7 @@ html[dir=rtl] .sliders-head .mo-nav li .tab-link {
 @media (max-width: 992px) {
   .sliders-head .mo-nav li .tab-link {
     font-size: 21px;
+    padding-top: 10px;
   }
 }
 .sliders-head .mo-nav li.active .tab-link {
@@ -1617,11 +1619,11 @@ html[dir=rtl] .sliders-head .mo-nav li .tab-link {
 }
 
 .sliders {
-  margin-top: 87px;
+  margin-top: 80px;
 }
 @media (max-width: 992px) {
   .sliders {
-    margin-top: 50px;
+    margin-top: 40px;
   }
 }
 
@@ -2108,7 +2110,7 @@ html[dir=rtl] .sec-head {
 }
 @media (max-width: 992px) {
   html[dir=rtl] .sec-head {
-    font-size: 25px;
+    font-size: 21px;
   }
 }
 
@@ -2119,7 +2121,7 @@ html[dir=rtl] .sec-head {
 @media (max-width: 992px) {
   .feats-cont {
     margin-top: 50px;
-    padding: 20px 0;
+    padding: 30px 0;
   }
 }
 
