@@ -1434,8 +1434,9 @@ html[dir=rtl] .single-banner .banner-info {
   top: 10px;
   right: 10px;
   background-color: #efce5f;
-  padding: 0 12px;
-  height: 22px;
+  padding: 0 10px;
+  min-width: 55px;
+  line-height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1450,7 +1451,8 @@ html[dir=rtl] .single-banner .banner-info {
   left: 10px;
   background-color: #30b193;
   padding: 0 10px;
-  height: 22px;
+  min-width: 55px;
+  line-height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
